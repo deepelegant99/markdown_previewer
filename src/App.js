@@ -1,9 +1,12 @@
 import styles from "./App.module.css";
+import { Editor } from "./components/Editor";
+import { Preview } from "./components/Preview";
 
 function App() {
   return (
     <div className={styles.App}>
-      <p>Markdown Previewer</p>
+      <Editor />
+      <Preview />
     </div>
   );
 }
