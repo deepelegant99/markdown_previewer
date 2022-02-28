@@ -1,8 +1,8 @@
 import React from 'react'
-import previewCSS from './Preview.module.css';
+import styles from './Preview.module.css';
 
 export const Preview = () => {
   return (
-    <div id="Preview"  className={previewCSS.Preview}>Preview</div>
+    <div id="Preview"  className={styles.Preview}>Preview</div>
   )
 }
