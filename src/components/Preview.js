@@ -1,13 +1,11 @@
 import React from 'react'
 import styles from './Preview.module.css';
+import { marked } from 'marked';
 
-export const Preview = ({word}) => {
+export const Preview = ({text}) => {
   return (
-    <div id="Preview"  className={styles.Preview}>
-      Preview
-
-      {word}
-    
+    <div id="Preview" className={styles.Preview}>
+      {marked.parse(text)}
     </div>
-  )
+  );
 }
