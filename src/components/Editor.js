@@ -1,11 +1,15 @@
-import React from 'react';
+
+import React, { useState } from 'react';
 import styles from "./Editor.module.css";
 
 
 export const Editor = () => {
 
-  function testHandle(evt){
-    console.log(evt.target.value);
+  const [word, setWord] = useState();
+
+  function testHandle(word){
+    console.log(word.target.value);
+    setWord(word.target.value);
   }
   return (
     <div style={{backgroundColor:'blue', width:'30%', height:'40%'}}>Editor
