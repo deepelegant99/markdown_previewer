@@ -4,17 +4,17 @@ import { Editor } from "./components/Editor";
 import { Preview } from "./components/Preview";
 
 function App() {
-  const [word, setWord] = useState();
+  const [text, setText] = useState("");
 
-  function testHandle(word){
-    console.log(word.target.value);
-    setWord(word.target.value);
+  function editorHandler(event){
+    console.log(event.target.value);
+    setText(event.target.value);
   }
 
   return (
     <div className={styles.App}>
-      <Editor word={word}/>
-      <Preview word={word}/>
+      <Editor text={text} editorHandler ={editorHandler}/>
+      <Preview text={text}/>
     </div>
   );
 }
