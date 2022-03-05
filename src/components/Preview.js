@@ -1,11 +1,13 @@
-import React from 'react'
-import styles from './Preview.module.css';
-import { marked } from 'marked';
+import React from "react";
+import styles from "./Preview.module.css";
+import { marked } from "marked";
+import Reactmarkdown from "react-markdown";
 
-export const Preview = ({text}) => {
+export const Preview = ({ text }) => {
   return (
     <div id="Preview" className={styles.Preview}>
-      {marked.parse(text)}
+      {/* <Markdown>{marked.parse(text)}</Markdown> */}
+      <Reactmarkdown children={text} />
     </div>
   );
-}
+};
