@@ -4,10 +4,15 @@ import { marked } from "marked";
 import Reactmarkdown from "react-markdown";
 
 export const Preview = ({ text }) => {
+  const getMarkdownText = () => {
+    const rawMarkup = marked(text, { sanitize: true });
+    return { __html: rawMarkup };
+  };
   return (
-    <div id="Preview" className={styles.Preview}>
-      {/* <Markdown>{marked.parse(text)}</Markdown> */}
-      <Reactmarkdown children={text} />
-    </div>
+    <div
+      id="Preview"
+      dangerouslySetInnerHTML={getMarkdownText()}
+      className={styles.Preview}
+    />
   );
 };
