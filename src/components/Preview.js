@@ -10,7 +10,7 @@ export const Preview = ({ text }) => {
   };
   return (
     <div
-      id="Preview"
+      id="preview"
       dangerouslySetInnerHTML={getMarkdownText()}
       className={styles.Preview}
     />

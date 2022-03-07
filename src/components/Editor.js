@@ -5,7 +5,7 @@ export const Editor = ({ text, editorHandler }) => {
   return (
     <textarea
       className={styles.TextArea}
-      id="Editor"
+      id="editor"
       onChange={editorHandler}
       value={text}
     />
