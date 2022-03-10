@@ -22,6 +22,27 @@ The following is a code block:
  \`\`\`javascript I'm A tab
 console.log('Code Tab A');
 \`\`\`
+
+
+
+- We can also make some markdown list.
+  - Item 1.
+    - Item 2.
+      - Item 3.
+        - Item 4.
+
+
+1. Here is a number list
+1. Item 1
+1. Item 2
+1. Item 3
+1. Item 4
+
+
+>This is a blockquote
+
+![x-factor](https://terrigen-cdn-dev.marvel.com/content/prod/1x/0_0e5a.jpg )
+
 `; 
 
  
