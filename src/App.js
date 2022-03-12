@@ -4,20 +4,20 @@ import { Editor } from "./components/Editor";
 import { Preview } from "./components/Preview";
 
 function App() {
-  const defaulttext = `
+  const defaulttext =
+    `
 
 # Welcome to my React Markdown Previewer!
-## This is a sub-heading...`
-+
-` 
+## This is a sub-heading...` +
+    ` 
 This is how you do a link:
 [links](https://www.freecodecamp.org)
 ` +
-`
+    `
 The followng is a inline code: 
  \` d=2 \`
-` + 
-`
+` +
+    `
 The following is a code block: 
  \`\`\`javascript I'm A tab
 console.log('Code Tab A');
@@ -41,8 +41,9 @@ console.log('Code Tab A');
 
 >This is a blockquote
 
-![x-factor](https://terrigen-cdn-dev.marvel.com/content/prod/1x/0_0e5a.jpg )
+![x-factor](https://terrigen-cdn-dev.marvel.com/content/prod/1x/0_0e5a.jpg)
 
+**I love reactJS**
 `; 
 
  
